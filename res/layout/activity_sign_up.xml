@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.practiceapp3.SignUp"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/signUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill Details"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/entName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="UserName"
+        android:layout_below="@+id/signUpTitle"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/entDob"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Date of birth"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/entName"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/entDesignation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Designaion"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/entDob"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/entPhone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="PhoneNumber"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/entDesignation"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/entPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/entPhone"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/entConfPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Password"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/entPassword"
+        android:gravity="center_horizontal"/>
+
+    <ImageView
+        android:id="@+id/signUp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/entConfPass"
+        />
+    
+    
+</RelativeLayout>

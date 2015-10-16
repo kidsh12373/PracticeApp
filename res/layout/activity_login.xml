@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.practiceapp3.Login"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LoginPage"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic" />
+    
+    <EditText 
+        android:id="@+id/mLoginUname"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:hint="UserName"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/loginTitle"
+        android:layout_marginTop="50dp"/>
+    
+    <EditText 
+        android:id="@+id/mLoginUpass"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/mLoginUname"
+        android:layout_marginTop="20dp"/>
+    
+    <ImageView 
+        android:id="@+id/mLoginBtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mLoginUpass"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/button"/>
+    
+    <TextView 
+        android:id="@+id/backToLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="SignUp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@+id/mLoginBtn"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"/>
+
+</RelativeLayout>

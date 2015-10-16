@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.practiceapp3.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:text="WELCOME"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/bgimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-35dp"
+        android:src="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/vectorimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bgimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/vector_head_icon" />
+
+    <EditText
+        android:id="@+id/entUname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vectorimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:hint="User Name" />
+
+    <EditText
+        android:id="@+id/entpass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entUname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:hint="Password" />
+
+    <ImageView
+        android:id="@+id/loginBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/entpass"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textColor="@android:color/tertiary_text_dark"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+       	android:src="@drawable/lower_bg" 
+       	android:layout_marginBottom="-12dp"/>
+    
+</RelativeLayout>
